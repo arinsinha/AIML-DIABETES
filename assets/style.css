@@ -1,0 +1,222 @@
+/* Global styles */
+.stApp {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F0F2F6 100%);
+    color: #262730;
+}
+
+/* Main container styling */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header styling */
+.main-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.main-header h1 {
+    color: #9B59B6;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.main-header p {
+    color: #262730;
+    line-height: 1.6;
+}
+
+/* Section styling */
+.section-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    border: 1px solid rgba(155, 89, 182, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    max-width: 1200px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.section-container:last-child {
+    border-bottom: none;
+    box-shadow: none;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(155, 89, 182, 0.1);
+}
+
+/* Form styling */
+.stTextInput, .stNumberInput {
+    margin-bottom: 1rem;
+}
+
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input {
+    background-color: #FFFFFF !important;
+    color: #262730 !important;
+    border: 1px solid rgba(155, 89, 182, 0.3) !important;
+}
+
+/* Button styling */
+/* Get Prediction Button specific styling */
+.st-key-FormSubmitter-prediction_form-Get-Prediction button {
+    width: 20% !important;
+    margin: 0 auto !important;
+    background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%) !important;
+    display: flex;
+    color: white !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.st-key-FormSubmitter-prediction_form-Get-Prediction button:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(155, 89, 182, 0.4) !important;
+    background: linear-gradient(135deg, #8E44AD 0%, #8E44AD 100%) !important;
+}
+
+/* General button styling */
+.stButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.stButton > button {
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(#8E44AD 0%, #8E44AD 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(155, 89, 182, 0.3);
+    color: white; /* Corrected */
+}
+
+.submit_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Chat styling */
+.chat-message {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    background: rgba(240, 242, 246, 0.7);
+    border-left: 3px solid #9B59B6;
+}
+
+.chat-response {
+    padding: 1.5rem;
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    background: rgba(155, 89, 182, 0.1);
+    border-left: 4px solid #9B59B6;
+    color: #262730;
+}
+
+/* Metrics styling */
+.metric-container [data-testid="stMetricValue"] {
+    color: #9B59B6 !important;
+    font-size: 1.8rem !important;
+}
+
+/* Plot styling */
+.js-plotly-plot {
+    background-color: transparent !important;
+}
+
+.js-plotly-plot .plot-container {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(155, 89, 182, 0.2);
+    color: #262730;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 1rem;
+    }
+
+    .main-header h1 {
+        font-size: 2rem;
+    }
+
+    .section-container {
+        padding: 1.5rem;
+    }
+}
+
+/* Hide tooltips, question marks and form hints */
+[data-baseweb="tooltip"],
+.st-emotion-cache-16idsys p,
+.st-emotion-cache-16idsys e,
+button[kind="help"] {
+    display: none !important;
+}
+
+/* Remove empty containers and extra whitespace */
+.st-emotion-cache-16idsys:empty,
+.st-emotion-cache-r421ms:empty,
+.st-emotion-cache-1kyxreq:empty,
+.st-emotion-cache-1544g2k:empty,
+.st-emotion-cache-1n76uvr:empty,
+.st-emotion-cache-t1wise > div > div > div > div:empty,
+div.section-container:empty {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 0 !important;
+}
+
+/* Remove extra divs after sections */
+div[data-testid="stVerticalBlock"] > div.section-container + div:empty {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 0 !important;
+}
+
