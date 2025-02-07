@@ -184,3 +184,4 @@ st.markdown("""
 
 
 # Start with 'streamlit run main.py --server.port 8501'
+# And run at 'http://localhost:8501/'
