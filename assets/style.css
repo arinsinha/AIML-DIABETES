@@ -176,19 +176,33 @@
 }
 
 /* Responsive design */
+/* Responsive Button Styling */
 @media screen and (max-width: 768px) {
-    .main-container {
-        padding: 1rem;
+    .st-key-FormSubmitter-prediction_form-Get-Prediction button,
+    .stButton > button {
+        width: 80% !important; /* Make buttons take more width on smaller screens */
+        padding: 0.75rem 1rem !important; /* Adjust padding */
+        font-size: 1rem !important; /* Adjust font size */
     }
 
-    .main-header h1 {
-        font-size: 2rem;
-    }
-
-    .section-container {
-        padding: 1.5rem;
+    .submit_button {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
     }
 }
+
+/* Extra small screens (like mobile phones) */
+@media screen and (max-width: 480px) {
+    .st-key-FormSubmitter-prediction_form-Get-Prediction button,
+    .stButton > button {
+        width: 90% !important; /* Increase width for smaller screens */
+        padding: 0.5rem 0.75rem !important; /* Reduce padding */
+        font-size: 0.9rem !important; /* Adjust font size */
+        border-radius: 6px !important; /* Slightly reduce border-radius */
+    }
+}
+
 
 /* Hide tooltips, question marks and form hints */
 [data-baseweb="tooltip"],
